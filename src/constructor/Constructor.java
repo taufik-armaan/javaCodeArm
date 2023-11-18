@@ -2,6 +2,8 @@ package constructor;
 
 public class Constructor {
 
+	
+	// I am addding second commit to this class
 	int x, y;
 	String s;
 	
