@@ -24,7 +24,7 @@ public class ThrowKeyword {
 	public static void main(String[] args) {
 
 		ThrowKeyword obj = new ThrowKeyword();
-		obj.numCheck(-1);
+		obj.numCheck(-3);
 			
 		
 	}

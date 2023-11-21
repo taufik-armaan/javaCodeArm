@@ -23,7 +23,7 @@ public class doWhileLoop {
 			j++;
 			
 		}
-		while(i<=5);
+		while(j<=5);
 		
 		
 	}
