@@ -13,7 +13,7 @@ public class StringOperations {
 		// 1. length of the string
 		System.out.println(s.length());
 		
-		// 2. concat() - joining strings
+		// 2. concat() - joining two strings
 		
 		String s2 = "Automation";
 		System.out.println(s.concat(s2));
