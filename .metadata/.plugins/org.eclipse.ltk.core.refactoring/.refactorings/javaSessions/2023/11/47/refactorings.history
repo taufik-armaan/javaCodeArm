@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;javaSessions/src/constructor/testNG file&apos; to &apos;testNG.txt&apos;" description="Rename resource &apos;testNG file&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/constructor/testNG file" name="testNG.txt" stamp="1700586447534" updateReferences="true"/>
+</session>

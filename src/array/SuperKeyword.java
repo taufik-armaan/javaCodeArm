@@ -25,6 +25,7 @@ class Dog extends Animal{
 	void eat() {
 		System.out.println("eating.... chapati");
 		super.eat();
+		System.out.println(super.color);
 	}
 }
 

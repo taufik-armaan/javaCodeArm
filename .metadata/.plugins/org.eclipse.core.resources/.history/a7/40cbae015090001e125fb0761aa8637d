@@ -1,0 +1,30 @@
+package stepDefinations;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class StepsLoginValid {
+
+	
+	@Given("User Launch the browser")
+	public void user_launch_the_browser() {
+	    
+	}
+
+	@When("User enters username as {string} and password as {string}")
+	public void user_enters_username_as_and_password_as(String string, String string2) {
+	    
+	}
+
+	@When("click on Login button")
+	public void click_on_login_button() {
+	    
+	}
+
+	@Then("User navigate to My Account page")
+	public void user_navigate_to_my_account_page() {
+	    
+	}
+
+}

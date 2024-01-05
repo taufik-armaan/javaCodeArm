@@ -1,0 +1,96 @@
+package stepDefinations;
+
+import java.time.Duration;
+import java.util.ResourceBundle;
+import java.util.logging.LogManager;
+
+import org.apache.logging.log4j.core.Logger;
+import org.openqa.selenium.By;
+//import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.Assert;
+
+import freemarker.core.CSSOutputFormat;
+import io.cucumber.java.After;
+//import io.cucumber.core.logging.Logger;
+import io.cucumber.java.Before;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class Steps {
+
+	WebDriver driver;
+	Logger logger; // for logging
+	ResourceBundle rb;  // for reading property file
+	String br; // to store browser name
+	
+	
+	  @Before 
+	  public void setup() {
+	  
+		   //logger = LogManager.getLogger(this.getClass());
+		   rb=ResourceBundle.getBundle("config");
+		   br = rb.getString("browser");
+		  
+	  }
+	  
+	  @After
+	  public void teardown() {
+		  driver.close();
+	  }
+	 
+	
+	@Given("User Launch browser")
+	public void user_launch_browser() {
+	  
+		if(br.equals("chrome")) {
+			driver = new ChromeDriver();
+		}
+		else if(br.equals("firefox")){
+			driver = new FirefoxDriver();
+		}
+		else {
+			driver = new EdgeDriver();
+		}
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+	}
+
+	@Given("Open URL {string}")
+	public void open_url(String url) {
+		
+		driver.get(url);
+	   driver.manage().window().maximize();
+	}
+
+
+	/*
+	 * @When("click on Login button") public void click_on_login_button() throws
+	 * InterruptedException { //driver.findElement(By.linkText("LOGIN")).click();
+	 * driver.findElement(By.xpath("//a[@class='theme-btn']")).click();
+	 * Thread.sleep(2000); }
+	 */
+
+	@When("User enters Email as {string} and password as {string}")
+	public void user_enters_email_as_and_password_as(String email, String pass) {
+		 
+	    driver.findElement(By.xpath("//input[@id='email']")).sendKeys(email);
+	    driver.findElement(By.xpath("//input[@id='password']")).sendKeys(pass);
+	    driver.findElement(By.xpath("//input[@type='submit']")).click();
+	}
+
+	@Then("User navigate to My Account page")
+	public void user_navigate_to_my_account_page() {
+	   String welText = driver.findElement(By.xpath("//span[text()='Tohfik Mohammad']")).getText();
+	   System.out.println(welText);
+	   Assert.assertEquals(welText, "Tohfik Mohammad");
+	   if (welText.equals("Tohfik Mohammad")) {
+		   System.out.println("User logged in successfully and User navigated to My account page");
+	   }
+	}
+
+
+}

@@ -1,0 +1,12 @@
+package constructor;
+
+public class ConstructorOverloading {
+
+		int x; int y; double d;
+		
+		public static void main(String[] args) {
+
+	}
+
+}
+

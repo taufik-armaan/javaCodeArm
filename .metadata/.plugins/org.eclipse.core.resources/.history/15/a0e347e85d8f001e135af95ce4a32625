@@ -1,0 +1,12 @@
+Feature: Login to the application
+
+
+@sanity
+ Scenario: Successfull Login with valid credentials
+   Given User Launch browser
+   And Open URL "https://www.saucedemo.com/"
+   When User navigate to login page
+   And click on Login button
+   And User enters Email as "standard_user" and password as "secret_sauce"
+   And click on Login button
+   Then User navigate to My Account page

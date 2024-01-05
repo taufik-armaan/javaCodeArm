@@ -22,6 +22,7 @@ public class StringOperations {
 		// 3. trim() - used to remove left and right spaces from the string
 		String h = "    Selenium  ";
 		System.out.println(h);
+		System.out.println(h.trim());
 		System.out.println("The lenght of the string before trimming is " + h.length());
 		String k = h.trim();
 		System.out.println("The lenght of the string after trimming is " + k.length());

@@ -17,6 +17,7 @@ public class StringComparision {
 		 String s3 = new String("abc");
 		 String s4 = new String("abc");
 		 
+		 System.out.println((s1==s3) + " Comparing string object and string value");
 		 System.out.println(s3);
 		 System.out.println(s4);
 		  

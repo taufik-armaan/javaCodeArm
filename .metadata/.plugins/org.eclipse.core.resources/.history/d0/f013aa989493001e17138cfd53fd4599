@@ -1,0 +1,47 @@
+package abstraction;
+
+interface Shape {
+	
+	int a = 10;  // by default variable in interface is static and final
+	int b = 20;  // by default variable in interface is static and final
+	
+	void circle();
+	
+	default void square() {
+		System.out.println("this is square - default method");
+		
+	}
+ 
+	static void rectangle() {
+		System.out.println("this is rectangle - static method");
+	}
+}
+
+
+
+public class InterfaceDemo implements Shape{
+
+	@Override
+	public void circle() {  // when implementing any interface then we have to override all the methods of interface in child class
+ 
+		System.out.println("this is circle");
+	}
+	
+	public static void main(String[] args) {
+
+		// if we have to access the methods of the interface then we have to create the object of the child class which implements interface
+		InterfaceDemo obj = new InterfaceDemo();
+		
+		obj.circle();
+		obj.square();
+		Shape.rectangle(); // static method directly access using interface name
+		
+		// Shape obj = new Shape(); // this is incorrect as we can not create the object of interface
+		
+	}
+
+	
+	
+	
+
+}

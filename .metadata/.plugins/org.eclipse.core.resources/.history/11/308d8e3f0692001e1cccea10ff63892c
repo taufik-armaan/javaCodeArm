@@ -1,0 +1,15 @@
+package interviewQues;
+
+public class SystemOutPrintin {
+
+	static String s = "welcome";
+
+	String d = "Rahul";
+	public static void main(String[] args) {
+
+     SystemOutPrintin.s.length();
+     // here 'SystemOutPrintin' is class, 's' is static String type variable and lenght() is method which belogs to String type
+		
+	}
+
+}

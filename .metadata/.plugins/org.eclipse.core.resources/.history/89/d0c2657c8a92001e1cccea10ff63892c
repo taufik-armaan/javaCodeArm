@@ -1,0 +1,41 @@
+package encapsulation;
+
+
+class Automation{
+	
+	public void add() {
+		System.out.println("Parent class method printed");
+	}
+	
+	
+class Selenium extends Automation{
+	 
+	public void add() {
+		System.out.println("Parent class method printed");  // overridden method from parent class 'Automation'
+	}
+}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+public class FinalMethodAndClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

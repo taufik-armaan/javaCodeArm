@@ -1,0 +1,14 @@
+package interviewQues;
+
+public class SystemOutPrintin {
+
+	static String s = "welcome";
+
+	
+	public static void main(String[] args) {
+
+
+		
+	}
+
+}

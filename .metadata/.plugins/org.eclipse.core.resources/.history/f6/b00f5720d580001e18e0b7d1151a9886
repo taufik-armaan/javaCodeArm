@@ -1,0 +1,19 @@
+package javaConditionalState;
+
+public class LargestOfThreeNum {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		// a>b  and a>c  a largest number
+		// b>a  and b>c  b largest number
+		// c>a  and c>b  c is largest number 
+	}
+	
+	int a=200, b=300, c=300
+	
+	if(a>b && a>c) {
+		System.out.println("a is largest number");
+	}
+
+}

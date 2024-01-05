@@ -1,0 +1,11 @@
+package abstraction;
+
+public class MNO {
+
+	int z = 500;
+	void m3() {
+		System.out.println("this is m3 from MNO class");
+		System.out.println(z);
+	}
+	
+}

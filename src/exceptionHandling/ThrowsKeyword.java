@@ -6,7 +6,7 @@ public class ThrowsKeyword {
 	
 	public int div(int a, int b) throws ArithmeticException{
 		int d=a/b;
-		return d;
+	    return d;
 	}
 	
 	
@@ -15,6 +15,8 @@ public class ThrowsKeyword {
 		
 
 		try {
+			//obj.div(20, 0);
+		
 			System.out.println(obj.div(40, 0));
 		}
 		catch (ArithmeticException e) {

@@ -2,7 +2,7 @@ package exceptionHandling;
 
 public class CheckedException {
 
-	public static void main(String[] args) throws InterruptedException {
+	public static void main(String[] args) throws InterruptedException  {
 		// TODO Auto-generated method stub
 
 		System.out.println("Starting the program....");

@@ -6,36 +6,33 @@ public class HandlingMultipleException {
 
 	public static void main(String[] args) {
 
+		Scanner sc = new Scanner(System.in);
 
-		
-Scanner sc = new Scanner(System.in);
-		
 		System.out.println("Enter the number");
 		int num = sc.nextInt();
-		
+
 		String s = null;
 
 		try {
-		System.out.println(100/num); // ArithmaticException
+			System.out.println(100 / num); // ArithmaticException
 		}
-		
+
 		/*
 		 * try { System.out.println(s.length()); // NullPointerException
 		 * 
 		 * }
 		 */
-		catch(ArithmeticException e) {
+		catch (ArithmeticException e) {
 			System.out.println(e.getMessage());
 			e.printStackTrace();
 			System.out.println("Invalid input provided");
 		}
-		
-		catch(NullPointerException e) {
+
+		catch (NullPointerException e) {
 			System.out.println(e.getMessage());
 			e.printStackTrace();
 			System.out.println("Invalid input provided");
-		}
-		catch(ArrayIndexOutOfBoundsException e) {
+		} catch (ArrayIndexOutOfBoundsException e) {
 			System.out.println(e.getMessage());
 			e.printStackTrace();
 			System.out.println("Invalid input provided");

@@ -1,0 +1,31 @@
+package objectsClassMethods;
+
+public class Student {
+
+	
+	int sid = 10;
+	String sname = "Honey";
+	char grade = 'A';
+	
+	// Approach - 1 - assigning the values to the parameters
+	public void showStudata() {
+		System.out.println(sid+"   "+sname+"    "+grade);
+	}
+	
+	// Approach - 2 - passing the attributes as a parameters
+	public void setData(int id, String name, char g) {
+		
+		sid = id;
+		sname = name;
+		grade = g;
+		System.out.println(id+"  "+name+"  "+g);
+	}
+	// Approach -3 - creating constructor
+		
+		 public Student(int StId, String StuName, char StuGrade) {
+			
+			
+		}
+		
+	}
+

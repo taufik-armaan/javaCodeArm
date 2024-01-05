@@ -1,0 +1,10 @@
+io.cucumber.junit.UndefinedStepException: The step 'click on Login' is undefined.
+You can implement this step using the snippet(s) below:
+
+@When("click on Login")
+public void click_on_login() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+

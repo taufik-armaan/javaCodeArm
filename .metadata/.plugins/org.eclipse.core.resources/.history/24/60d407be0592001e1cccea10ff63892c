@@ -1,0 +1,14 @@
+package interviewQues;
+
+public class SystemOutPrintin {
+
+	static String s = "welcome";
+
+	String d = "Rahul";
+	public static void main(String[] args) {
+
+     System.out.println(s);
+		
+	}
+
+}

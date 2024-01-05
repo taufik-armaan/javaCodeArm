@@ -1,0 +1,28 @@
+package encapsulation;
+
+
+final class Automation{
+	
+	final public void add() {
+		System.out.println("Parent class method printed");
+	}
+	
+	
+//class Selenium extends Automation{  // we can not extends/inherit final class
+	 
+	//public void add() {   // error. we can not override the final method of parent class
+		System.out.println("Parent class method printed");  // overridden method from parent class 'Automation'
+	}
+}
+	
+}
+
+
+public class FinalMethodAndClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

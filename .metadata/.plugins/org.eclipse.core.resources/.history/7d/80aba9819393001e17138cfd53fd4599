@@ -1,0 +1,32 @@
+package abstraction;
+
+interface shape {
+	
+	int a = 10;  // by default variable in interface is static and final
+	int b = 20;  // by default variable in interface is static and final
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+public class InterfaceDemo {
+
+	public static void main(String[] args) {
+
+
+	}
+
+}

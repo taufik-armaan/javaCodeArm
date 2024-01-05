@@ -1,0 +1,32 @@
+package constructor;
+
+public class ThisKeyword {
+
+	int x, y;
+	
+	public void setdata(int x, int y) {
+		
+		this.x=x;
+		this.y=y;
+	}
+	
+	public ThisKeyword() {
+		
+		
+	}
+	public void display() {
+		System.out.println(x);
+		System.out.println(y);
+	}
+	
+	
+	public static void main(String[] args) {
+
+		ThisKeyword obj = new ThisKeyword();
+		obj.setdata(10, 20);
+		obj.display();
+		
+
+	}
+
+}

@@ -1,0 +1,19 @@
+package javaConditionalState;
+
+public class IfElseIfLadder {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String day = "Monday";
+		
+		if(day=="Monday") {
+			System.out.println("The day is first");
+		}
+		else if(day=="Tuesday") {
+			System.out.println("The day is second");
+
+		}
+	}
+
+}

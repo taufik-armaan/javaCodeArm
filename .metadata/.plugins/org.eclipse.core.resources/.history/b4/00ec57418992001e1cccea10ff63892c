@@ -1,0 +1,26 @@
+package encapsulation;
+
+
+	class Test {
+		
+		int x = 100; // normal variable
+		final int y = 200;  // final variable. can not change the value. Value will be constant
+	}
+	
+	
+	
+	
+	
+	
+	
+	public class FinalKeywordExample {
+
+	
+	public static void main(String[] args) {
+
+
+		Test obj = new Test();
+		System.out.println(obj.x);
+	}
+
+}

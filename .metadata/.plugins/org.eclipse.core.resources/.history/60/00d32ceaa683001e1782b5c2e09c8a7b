@@ -1,0 +1,33 @@
+package objectsClassMethods;
+
+public class StudentMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		/*
+		 * Student stu = new Student();
+		 * 
+		 * // Approach - 1 - call variables and assign values
+		 * 
+		 * stu.sid= 67; stu.sname = "Rahul"; stu.grade = 'B';
+		 * 
+		 * stu.showStudata();
+		 * 
+		 * // Approach - 2 - pass the values in parameters
+		 * 
+		 * stu.setData(45, "Mohit", 'F');
+		 */
+		
+		// Approach -3 - creating constructor
+
+		Student stu2 = new Student(45, "Raj", 'D');
+
+	}
+
+	
+	
+	   
+}
+

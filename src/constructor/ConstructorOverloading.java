@@ -33,6 +33,9 @@ public class ConstructorOverloading {
 			System.out.println(d);
 
 		}
+		public void add() {
+			System.out.println(x+y+d);
+		}
 		
 		public static void main(String[] args) {
 
@@ -47,6 +50,7 @@ public class ConstructorOverloading {
 			
 			ConstructorOverloading obj4 = new ConstructorOverloading(30,40,50.30);
 			obj4.display();
+			obj4.add();
 	}
 
 }

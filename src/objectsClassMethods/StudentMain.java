@@ -23,8 +23,11 @@ public class StudentMain {
 		// Approach -3 - creating constructor
 
 		Student stu2 = new Student(45, "Raj", 'D');  // invoking value from from constructor 
-		stu2.showStudata();  // invoking method, without assigning values as did above
+		//stu2.showStudata();  // invoking method, without assigning values as did above
 
+		/*
+		 * Student stu3 = new Student(); stu3.showStudata();
+		 */
 	}
 
 	

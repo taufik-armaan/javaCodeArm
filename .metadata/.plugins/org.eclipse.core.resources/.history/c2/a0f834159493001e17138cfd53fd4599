@@ -1,0 +1,39 @@
+package abstraction;
+
+interface shape {
+	
+	int a = 10;  // by default variable in interface is static and final
+	int b = 20;  // by default variable in interface is static and final
+	
+	void circle();
+	
+	default void square() {
+		System.out.println("this is square - default method");
+		
+	}
+ 
+	static void rectangle() {
+		System.out.println("this is rectangle - static method");
+	}
+}
+
+
+
+public class InterfaceDemo implements shape{
+
+	@Override
+	public void circle() {  // when implementing any interface then we have to override all the methods of interface in child class
+ 
+		System.out.println("this is circle");
+	}
+	
+	public static void main(String[] args) {
+
+
+	}
+
+	
+	
+	
+
+}

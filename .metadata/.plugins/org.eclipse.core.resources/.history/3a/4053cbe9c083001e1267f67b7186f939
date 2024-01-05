@@ -1,0 +1,31 @@
+package constructor;
+
+public class Constructor {
+
+	int x, y;
+	String s;
+	
+	public Constructor() {
+		
+		x=100;
+		y=50;
+		s="Selenium";
+	}
+	
+	public void display() {
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

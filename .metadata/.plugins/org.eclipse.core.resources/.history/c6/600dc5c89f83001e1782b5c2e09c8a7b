@@ -1,0 +1,13 @@
+package objectsClassMethods;
+
+public class Student {
+
+	
+	int sid = 10;
+	String sname = "Honey";
+	char grade = 'A';
+	
+	public void showStudata() {
+		System.out.println(sid+"   "+sname+"    "+grade);
+	}
+}

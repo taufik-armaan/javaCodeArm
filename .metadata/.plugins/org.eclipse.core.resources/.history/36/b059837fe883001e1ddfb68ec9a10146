@@ -1,0 +1,42 @@
+package constructor;
+
+public class ConstructorOverloading {
+
+		int x; int y; double d;
+		
+		ConstructorOverloading(){
+			x=10;
+			y=20;
+			d=98.6;
+					
+		}
+		
+		ConstructorOverloading(int a, int b){
+			x=a;
+			y=b;
+		}
+		
+		ConstructorOverloading(int p, double r){
+			
+			x=p;
+			d=r;
+		}
+		ConstructorOverloading(int l, int m, double n){
+			x=l;
+			y=m;
+			d=n;
+		}
+		
+		public void display() {
+			System.out.println(x);
+		}
+		
+		public static void main(String[] args) {
+
+			ConstructorOverloading obj =new ConstructorOverloading();
+			obj.
+
+	}
+
+}
+

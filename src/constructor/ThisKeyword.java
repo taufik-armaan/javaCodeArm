@@ -32,6 +32,9 @@ public class ThisKeyword {
 		ThisKeyword obj2 = new ThisKeyword(30,40);
 		obj2.display();
 		
+	    obj2.setdata(10, 20);
+	    obj2.display();
+		
 		
 
 		

@@ -1,0 +1,19 @@
+package objectsClassMethods;
+
+public class MainClass {
+
+	
+	public static void main(String args[]){
+		
+		Employee obj = new Employee();
+		obj.EmpId = 10;
+		obj.EmpJob = "Manager";
+		obj.EmpName = "John";
+		obj.EmpSalary = 50000;
+		
+		obj.displayEmpData();
+		
+		
+		
+	}
+}

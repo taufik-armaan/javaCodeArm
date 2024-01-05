@@ -22,14 +22,16 @@ public class Student {
 	}
 	// Approach -3 - creating constructor
 		
-		 public Student(int StId, String StuName, char StuGrade) {
-			
-			sid = StId;
-			sname = StuName;
-			grade = StuGrade;
-			System.out.println(StId+"  "+StuName+"  "+StuGrade);
-
-		}
+	
+	  public Student(int StId, String StuName, char StuGrade) {
+	  
+	  sid = StId; 
+	  sname = StuName; 
+	  grade = StuGrade;
+	  System.out.println(StId+"  "+StuName+"  "+StuGrade);
+	  
+	  }
+	 
 		
 	}
 

@@ -1,0 +1,42 @@
+package abstraction;
+
+interface shape {
+	
+	int a = 10;  // by default variable in interface is static and final
+	int b = 20;  // by default variable in interface is static and final
+	
+	void circle();
+	
+	default void square() {
+		System.out.println("this is square - default method");
+		
+	}
+ 
+	static void rectangle() {
+		System.out.println("this is rectangle - static method");
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+public class InterfaceDemo {
+
+	public static void main(String[] args) {
+
+
+	}
+
+}

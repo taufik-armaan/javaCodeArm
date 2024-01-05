@@ -1,0 +1,11 @@
+package javaConditionalState;
+
+public class IfElseIfLadder {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String day = "Monday";
+	}
+
+}
