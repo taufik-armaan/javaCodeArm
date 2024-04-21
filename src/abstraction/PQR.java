@@ -18,17 +18,25 @@ public class PQR extends MNO implements ABC,XYZ {
 
 	public static void main(String args[]) {
 		
-		PQR obj = new PQR();
 		
-		obj.m1();
-		obj.m2();
-		System.out.println(obj.x);  // all the variable of the interface is static and final by default so showing suggestion
-		System.out.println(y);
-		System.out.println(ABC.x); // this will also work as accessing using interface name as we do for class using class name
+		  PQR obj = new PQR();
+		  
+		  obj.m1(); 
+		  obj.m2(); 
+		  System.out.println(obj.x); // all the variable of the interface is static and final by default so showing suggestion
+		  System.out.println(y); 
+		  System.out.println(ABC.x); // this will also work as accessing using interface name as we do for class using class name
+		  
+		  // calling variables and methods of MNO class which is parent of PQR class
+		  obj.m3(); 
+		  System.out.println(obj.z);
+		 
+		// calling methods and variables of the interface using object reference variable of interface 
+		ABC obj1 = new PQR();
 		
-		// calling variables and methods of MNO class which is parent of PQR class
-		obj.m3();
-		System.out.println(obj.z);
+		System.out.println(obj1.x);
+		obj1.m1();
+		
 	}
 	
 	

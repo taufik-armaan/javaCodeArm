@@ -21,7 +21,9 @@ class Dog extends Animal{
 		System.out.println(super.color);
 	}
 	
-	
+	void xyz(){
+		super.eat();
+	}
 	void eat() {
 		System.out.println("eating.... chapati");
 		super.eat();
@@ -38,6 +40,8 @@ public class SuperKeyword {
 		Dog d = new Dog();
 		d.dosplayColor();
 		d.eat();
+		
+		d.xyz();
 	}
 
 }
